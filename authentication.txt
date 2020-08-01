@@ -1,0 +1,27 @@
+- Configure Jenkins for Enterprise Authentication with LDAP
+In the Jenkins GUI click on “Manage Jenkins”
+Click the lock icon “Configure Global Security”
+Select the checkbox “Enable Security”
+Use the radio button option for LDAP
+Enter the Hostname/IP address of the LDAP server
+Select “Advanced Server Configuration”
+Configure the LDAP authentication to match your environment
+Once configured, use the “Test LDAP Setting” and put in your username and password
+If successful, it will present a login success message
+Click Apply and Save button
+
+- Active Directory Authentication
+Select “Manage Jenkins” in home screen
+Click “Manage Plugins”
+Select the “Available” tab
+Enter “Active Directory” in the search box
+Select the “Active Directory Plugin” and click “Download now and install after restart”
+Restart your Jenkins server when it is idle
+Once installed, in “Manage Jenkins” select “Configure Global Security”
+Select “Active Directory” and enter the domain and domain accounts
+Choose “Matrix based Security” and configure the desired users and groups (note: they are case sensitive)
+Login to the web interface with Active Directory credentials to test the functionality
+
+
+More resources:
+https://jenkins.io/doc/tutorials/create-a-pipeline-in-blue-ocean/
